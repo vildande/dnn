@@ -26,8 +26,8 @@ It includes data loading, preprocessing, model training, hyperparameter tuning, 
 
 ### Neural Network Architecture
 
-**Input Layer**: 784 nodes (28x28 pixels)
-**Hidden Layer**: 512 neurons with ReLU activation
+**Input Layer**: 784 nodes (28x28 pixels) \\
+**Hidden Layer**: 512 neurons with ReLU activation \\
 **Output Layer**: 10 neurons with softmax activation (digits 0-9)
 
 ### Data
