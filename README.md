@@ -41,7 +41,9 @@ Each image is a 28x28 pixel grid flattened into a 1D vector of 784 values.
 
 ### Key Features
 **Data Handling**: Loads and preprocesses MNIST data. The data is saved in `.npy` format for faster loading.
+
 **Training and Evaluation**: Includes functions to train and validate the model, with option to resume training from a saved state.
+
 **Hyperparameter Tuning**: Searches for optimal learning rate, batch size, and decay factor. Saves best hyperparameters for future runs.
 
 ### How to use?
