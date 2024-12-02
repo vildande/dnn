@@ -26,9 +26,9 @@ It includes data loading, preprocessing, model training, hyperparameter tuning, 
 
 ### Neural Network Architecture
 
-- **Input Layer**: 784 nodes (28x28 pixels)
-- **Hidden Layer**: 512 neurons with ReLU activation
-- **Output Layer**: 10 neurons with softmax activation (digits 0-9)
+**Input Layer**: 784 nodes (28x28 pixels)
+**Hidden Layer**: 512 neurons with ReLU activation
+**Output Layer**: 10 neurons with softmax activation (digits 0-9)
 
 ### Data
 
@@ -38,12 +38,11 @@ The project uses the MNIST dataset of grayscale images:
 Each image is a 28x28 pixel grid flattened into a 1D vector of 784 values.
 
 ### Key Features
+**Data Handling**: Loads and preprocesses MNIST data. The data is saved in `.npy` format for faster loading.
+**Training and Evaluation**: Includes functions to train and validate the model, with option to resume training from a saved state.
+**Hyperparameter Tuning**: Searches for optimal learning rate, batch size, and decay factor. Saves best hyperparameters for future runs.
 
-1. **Data Handling**: Loads and preprocesses MNIST data. The data is saved in `.npy` format for faster loading.
-2. **Training and Evaluation**: Includes functions to train and validate the model, with option to resume training from a saved state.
-3. **Hyperparameter Tuning**: Searches for optimal learning rate, batch size, and decay factor. Saves best hyperparameters for future runs.
-
-### Usage
+### How to use?
 
 1. **Data Preparation**: Run `dnn.py` to load the data from MNIST `.idx` files in the `dataset` folder, preprocess, and save `.npy` files.
 2. **Hyperparameter Tuning**: Once the data is loaded, `dnn.py` automatically tunes and saves best hyperparameters in `best_hyperparams.pkl`.
